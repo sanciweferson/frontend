@@ -1,55 +1,207 @@
-body {
+/* ============================= */
+/* RESET BÁSICO */
+/* ============================= */
+
+* {
   margin: 0;
-  font-family: system-ui, sans-serif;
-  background: #0f0f0f;
-  color: #eaeaea;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #0f172a;
+  color: #e2e8f0;
+  line-height: 1.6;
+}
+
+/* ============================= */
+/* CONTAINER PRINCIPAL */
+/* ============================= */
 
 .content {
   max-width: 900px;
-  margin: 40px auto;
+  margin: 60px auto;
   padding: 0 20px;
 }
 
-.card {
-  background: #161616;
-  padding: 20px;
-  border-radius: 10px;
+/* ============================= */
+/* TÍTULOS */
+/* ============================= */
+
+h1 {
+  font-size: 2.5rem;
   margin-bottom: 20px;
+  font-weight: 700;
+  color: #f8fafc;
 }
+
+h2 {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  margin-top: 30px;
+  color: #cbd5e1;
+}
+
+p {
+  margin-bottom: 15px;
+  color: #94a3b8;
+}
+
+/* ============================= */
+/* CARD */
+/* ============================= */
+
+.card {
+  background: #1e293b;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.35);
+}
+
+/* ============================= */
+/* BLOCO DE CÓDIGO */
+/* ============================= */
 
 .code-wrapper {
   position: relative;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .code-block {
-  background: #1e1e1e;
-  padding: 12px;
-  border-radius: 8px;
-  font-family: monospace;
+  background: #0d1117;
+  padding: 18px;
+  border-radius: 10px;
+  font-family: "Fira Code", monospace;
+  font-size: 14px;
   overflow-x: auto;
+  border: 1px solid #1f2937;
 }
+
+.code-block div {
+  white-space: pre;
+}
+
+/* ============================= */
+/* BOTÃO COPIAR */
+/* ============================= */
 
 .btn-copy {
   position: absolute;
-  top: 8px;
-  right: 8px;
-  padding: 6px 10px;
-  font-size: 12px;
+  top: 12px;
+  right: 12px;
+  background: #2563eb;
   border: none;
+  color: white;
+  padding: 6px 12px;
+  font-size: 12px;
   border-radius: 6px;
   cursor: pointer;
-  background: #2d2d2d;
-  color: #fff;
+  transition: all 0.2s ease;
 }
 
 .btn-copy:hover {
-  background: #444;
+  background: #1d4ed8;
+  transform: scale(1.05);
 }
 
-/* tokens */
-.token-keyword { color: #c586c0; }
-.token-variable { color: #9cdcfe; }
-.token-operator { color: #d4d4d4; }
-.token-string   { color: #ce9178; }
+.btn-copy:active {
+  transform: scale(0.95);
+}
+
+/* ============================= */
+/* RESULTADO (Console Fake) */
+/* ============================= */
+
+.result {
+  margin-top: 18px;
+}
+
+.console-output {
+  background: #000;
+  color: #00ff88;
+  padding: 14px;
+  border-radius: 8px;
+  font-family: "Fira Code", monospace;
+  font-size: 14px;
+  margin-top: 8px;
+  border: 1px solid #1f2937;
+  min-height: 35px;
+}
+
+/* ============================= */
+/* TOKENS DE SYNTAX HIGHLIGHT */
+/* ============================= */
+
+.token-keyword {
+  color: #c792ea;
+}
+
+.token-string {
+  color: #ecc48d;
+}
+
+.token-operator {
+  color: #89ddff;
+}
+
+.token-variable {
+  color: #82aaff;
+}
+
+.token-comment {
+  color: #6a9955;
+  font-style: italic;
+}
+
+/* ============================= */
+/* SCROLL PERSONALIZADO */
+/* ============================= */
+
+::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e293b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+/* ============================= */
+/* RESPONSIVO */
+/* ============================= */
+
+@media (max-width: 768px) {
+  .content {
+    margin: 30px auto;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .card {
+    padding: 18px;
+  }
+
+  .btn-copy {
+    font-size: 11px;
+    padding: 5px 8px;
+  }
+}
