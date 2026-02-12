@@ -156,3 +156,6 @@ document.addEventListener("click", async (e) => {
 // ====== INICIA O CARREGAMENTO ======
 // Chama a função principal assim que o script é lido
 carregarPagina();
+
+
+

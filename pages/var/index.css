@@ -1,207 +1,87 @@
-/* ============================= */
-/* RESET BÁSICO */
-/* ============================= */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
-  background-color: #0f172a;
-  color: #e2e8f0;
-  line-height: 1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1e1e1e; /* Fundo escuro */
+    color: #d4d4d4;
+    padding: 40px;
 }
-
-/* ============================= */
-/* CONTAINER PRINCIPAL */
-/* ============================= */
 
 .content {
-  max-width: 900px;
-  margin: 60px auto;
-  padding: 0 20px;
+    max-width: 900px;
+    margin: 0 auto;
 }
-
-/* ============================= */
-/* TÍTULOS */
-/* ============================= */
 
 h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  font-weight: 700;
-  color: #f8fafc;
+    color: #fff;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
 }
 
-h2 {
-  font-size: 1.4rem;
-  margin-bottom: 12px;
-  margin-top: 30px;
-  color: #cbd5e1;
+/* Estilo dos Cards */
+.card {
+    background: #252526;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    border-left: 5px solid #007acc;
 }
 
-p {
-  margin-bottom: 15px;
-  color: #94a3b8;
+.card h2 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    color: #4ec9b0;
 }
 
-/* ============================= */
-/* CARD */
-/* ============================= */
+/* Bloco de Código */
+.code-block {
+    position: relative;
+    background: #111;
+    color: #d4d4d4;
+    padding: 15px;
+    border-radius: 5px;
+    font-family: 'Consolas', 'Monaco', monospace;
+    line-height: 1.5;
+    margin: 15px 0;
+    font-size: 0.95rem;
+}
+
+/* Syntax Highlighting */
+.token-keyword { color: #569cd6; font-weight: bold; } /* var, function, etc */
+.token-variable { color: #9cdcfe; }                /* nomes das variáveis */
+.token-string   { color: #ce9178; }                /* "valores entre aspas" */
+.token-operator { color: #d4d4d4; }                /* = + - */
+
+/* Resultado do Console */
+.result {
+    background: #2d2d2d;
+    border-top: 1px solid #444;
+    padding: 10px;
+    font-style: italic;
+    color: #b5cea8;
+}
+
 
 .card {
-  background: #1e293b;
-  padding: 25px;
-  border-radius: 12px;
-  margin-bottom: 25px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative; /* Importante para o posicionamento do botão */
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
 }
-
-.card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.35);
-}
-
-/* ============================= */
-/* BLOCO DE CÓDIGO */
-/* ============================= */
-
-.code-wrapper {
-  position: relative;
-  margin-top: 15px;
-}
-
-.code-block {
-  background: #0d1117;
-  padding: 18px;
-  border-radius: 10px;
-  font-family: "Fira Code", monospace;
-  font-size: 14px;
-  overflow-x: auto;
-  border: 1px solid #1f2937;
-}
-
-.code-block div {
-  white-space: pre;
-}
-
-/* ============================= */
-/* BOTÃO COPIAR */
-/* ============================= */
 
 .btn-copy {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  background: #2563eb;
-  border: none;
+ 
+  top: 3rem;
+  background-color: #28a745;
   color: white;
-  padding: 6px 12px;
-  font-size: 12px;
-  border-radius: 6px;
+  border: none;
+  padding: 5px 10px;
   cursor: pointer;
-  transition: all 0.2s ease;
+  border-radius: 4px;
+  position: absolute;
+  z-index: 999;
+  right: 2rem;
 }
 
 .btn-copy:hover {
-  background: #1d4ed8;
-  transform: scale(1.05);
-}
-
-.btn-copy:active {
-  transform: scale(0.95);
-}
-
-/* ============================= */
-/* RESULTADO (Console Fake) */
-/* ============================= */
-
-.result {
-  margin-top: 18px;
-}
-
-.console-output {
-  background: #000;
-  color: #00ff88;
-  padding: 14px;
-  border-radius: 8px;
-  font-family: "Fira Code", monospace;
-  font-size: 14px;
-  margin-top: 8px;
-  border: 1px solid #1f2937;
-  min-height: 35px;
-}
-
-/* ============================= */
-/* TOKENS DE SYNTAX HIGHLIGHT */
-/* ============================= */
-
-.token-keyword {
-  color: #c792ea;
-}
-
-.token-string {
-  color: #ecc48d;
-}
-
-.token-operator {
-  color: #89ddff;
-}
-
-.token-variable {
-  color: #82aaff;
-}
-
-.token-comment {
-  color: #6a9955;
-  font-style: italic;
-}
-
-/* ============================= */
-/* SCROLL PERSONALIZADO */
-/* ============================= */
-
-::-webkit-scrollbar {
-  height: 8px;
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: #1e293b;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #334155;
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #475569;
-}
-
-/* ============================= */
-/* RESPONSIVO */
-/* ============================= */
-
-@media (max-width: 768px) {
-  .content {
-    margin: 30px auto;
-  }
-
-  h1 {
-    font-size: 2rem;
-  }
-
-  .card {
-    padding: 18px;
-  }
-
-  .btn-copy {
-    font-size: 11px;
-    padding: 5px 8px;
-  }
+  background-color: #218838;
 }
