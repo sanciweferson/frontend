@@ -1,6 +1,6 @@
 async function carregarPagina() {
     try {
-        const response = await fetch("http://localhost:3000/api/pages/var");
+        const response = await fetch("https://bakend-f8o0.onrender.com/api/pages/var");
         
         // Verifica se a resposta foi bem sucedida antes de tentar transformar em JSON
         if (!response.ok) {
