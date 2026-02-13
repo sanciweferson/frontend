@@ -1,16 +1,37 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <title>MDM - JavaScript</title>
-  <!-- <link rel="stylesheet" href="pages/var/index.css"> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Learning Platform</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="js/layout.js" defer></script>
+    <script src="js/spa.js" defer></script>
 </head>
 <body>
-  <h1>MDM JavaScript</h1>
 
-  <ul>
-    <li><a href="./pages/var/index.html">VAR</a></li>
-    <li><a href="./pages/let/index.html">LET</a></li>
-  </ul>
+    <nav-bar></nav-bar>
+
+    <main id="app">
+        <section class="hero">
+            <h1>Bem-vindo ao Guia de JavaScript</h1>
+            <p>Selecione um tópico no menu para começar a aprender.</p>
+        </section>
+    </main>
+
+    <footer-bar></footer-bar>
+
+       <script type="module">
+      import { initMenu } from "/js/mobile/menuEvents.js"
+       
+     
+
+      window.onload = () => {
+        
+        initMenu() // agora vai abrir o menu corretamente se estava aberto antes
+      
+      }
+ </script>
+
 </body>
 </html>

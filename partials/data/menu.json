@@ -1,0 +1,84 @@
+[
+  {
+    "title": "Fundamentos",
+    "icon": "home",
+    "pages": [
+      { "text": "Introdução", "href": "/partials/pages/fundamentos/introducao/index.html" },
+      { "text": "História do JS", "href": "/partials/pages/fundamentos/historia/index.html" },
+      { "text": "Console e Comentários", "href": "/partials/pages/fundamentos/console/index.html" },
+      { "text": "Ambientes (Node vs Browser)", "href": "/partials/pages/fundamentos/ambientes/index.html" }
+    ]
+  },
+  {
+    "title": "Variáveis e Tipos",
+    "icon": "chapters",
+    "pages": [
+      { "text": "var", "href": "/partials/pages/variaveis/var/index.html" },
+            { "text": " let ", "href": "/partials/pages/variaveis/let/index.html" },
+                  { "text": "const", "href": "/partials/pages/variaveis/const/index.html" },
+      { "text": "Tipos Primitivos", "href": "/partials/pages/variaveis/primitivos/index.html" },
+      { "text": "Tipagem Dinâmica", "href": "/partials/pages/variaveis/dinamica/index.html" },
+      { "text": "Template Strings", "href": "/partials/pages/variaveis/strings/index.html" }
+    ]
+  },
+  {
+    "title": "Lógica e Fluxo",
+    "icon": "bulb",
+    "pages": [
+      { "text": "Operadores Aritméticos", "href": "/partials/pages/logica/aritmeticos/index.html" },
+      { "text": "Operadores Lógicos", "href": "/partials/pages/logica/logicos/index.html" },
+      { "text": "Condicionais (if/else)", "href": "/partials/pages/logica/condicionais/index.html" },
+      { "text": "Switch Case", "href": "/partials/pages/logica/switch/index.html" },
+      { "text": "Estruturas de Repetição", "href": "/partials/pages/logica/loops/index.html" }
+    ]
+  },
+  {
+    "title": "Funções",
+    "icon": "bulb",
+    "pages": [
+      { "text": "Declaração e Expressão", "href": "/partials/pages/funcoes/basico/index.html" },
+      { "text": "Parâmetros e Retorno", "href": "/partials/pages/funcoes/parametros/index.html" },
+      { "text": "Arrow Functions", "href": "/partials/pages/funcoes/arrow/index.html" },
+      { "text": "Escopo e Closures", "href": "/partials/pages/funcoes/escopo/index.html" }
+    ]
+  },
+  {
+    "title": "Objetos e Arrays",
+    "icon": "user",
+    "pages": [
+      { "text": "Objetos Literais", "href": "/partials/pages/estruturas/objetos/index.html" },
+      { "text": "Métodos de Array (Map, Filter)", "href": "/partials/pages/estruturas/arrays/index.html" },
+      { "text": "Destructuring", "href": "/partials/pages/estruturas/destructuring/index.html" },
+      { "text": "JSON e Manipulação", "href": "/partials/pages/estruturas/json/index.html" }
+    ]
+  },
+  {
+    "title": "Dominação do DOM",
+    "icon": "contact",
+    "pages": [
+      { "text": "Seletores (QuerySelector)", "href": "/partials/pages/dom/seletores/index.html" },
+      { "text": "Event Listeners", "href": "/partials/pages/dom/eventos/index.html" },
+      { "text": "Criando Elementos", "href": "/partials/pages/dom/criacao/index.html" },
+      { "text": "Estilos com JS", "href": "/partials/pages/dom/estilos/index.html" }
+    ]
+  },
+  {
+    "title": "JS Assíncrono",
+    "icon": "summary",
+    "pages": [
+      { "text": "Promises", "href": "/partials/pages/async/promises/index.html" },
+      { "text": "Async / Await", "href": "/partials/pages/async/await/index.html" },
+      { "text": "Fetch API (GET/POST)", "href": "/partials/pages/async/fetch/index.html" },
+      { "text": "Tratamento de Erros", "href": "/partials/pages/async/try-catch/index.html" }
+    ]
+  },
+  {
+    "title": "Orientação a Objetos",
+    "icon": "chapters",
+    "pages": [
+      { "text": "Classes e Construtores", "href": "/partials/pages/poo/classes/index.html" },
+      { "text": "Herança", "href": "/partials/pages/poo/heranca/index.html" },
+      { "text": "Métodos Estáticos", "href": "/partials/pages/poo/static/index.html" }
+    ]
+  }
+]
